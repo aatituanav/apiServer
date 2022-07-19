@@ -4,8 +4,8 @@ Descargar e instalar NODEJS
 
 en la carpeta raiz, ejecutar el comando
 
-npm install
+"npm install"
 luego
-npm start
+"npm start"
 
 FIN
