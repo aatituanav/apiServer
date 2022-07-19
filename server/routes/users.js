@@ -4,8 +4,6 @@ const router = Router();
 const users = require('../../database/users.json');
 
 router.get('/users', (req, res) => {
-    console.log(users)
-    console.log(req.params)
     res.json(users);
 })
 
@@ -14,7 +12,6 @@ router.get('/user', (req, res) => {
     const resp = Object.values(users).filter((key) => {
         return key.position == pos
     })
-    console.log(resp)
     res.json(resp);
 })
 
