@@ -3,6 +3,8 @@ const router = Router();
 
 const users = require('../../database/users.json');
 
+
+//establecimiento de rutas 
 router.get('/users', (req, res) => {
     res.json(users);
 })

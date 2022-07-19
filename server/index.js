@@ -2,12 +2,15 @@ const express = require('express');
 const morgan = require('morgan');
 const cors=require("cors");
 const app = express();
+
+//credenciales
 const corsOptions ={
     origin:'*', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
  }
 
+ //configuracion
 app.set('json spaces', 2);
 app.set('port', process.env.port || 4000);
 
